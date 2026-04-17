@@ -1,0 +1,57 @@
+{
+  "Engine Debug": {
+    "prefix": "Engine.d",
+    "body": "Engine.d(${1:object})",
+    "description": "Envia mensagem de debug para todos os usuários do quarto.",
+  },
+  "Engine Log": {
+    "prefix": "Engine.log",
+    "body": "Engine.log(${1:object})",
+    "description": "Registra uma mensagem no log do quarto.",
+  },
+  "Commands": {
+    "prefix": "Commands",
+    "body": "Commands.${1:command}(${2:args})",
+    "description": "Executa um comando do jogo com os argumentos fornecidos.",
+  },
+  "Delay Wait": {
+    "prefix": "Delay.wait",
+    "body": "Delay.wait(${1:callback}, ${2:ticks})",
+    "description": "Executa uma função após um determinado número de ticks.",
+  },
+  "Delay Interval": {
+    "prefix": "Delay.interval",
+    "body": "Delay.interval(${1:callback}, ${2:ticks})",
+    "description": "Executa uma função repetidamente a cada determinado número de ticks.",
+  },
+  "Room": {
+    "prefix": "Room",
+    "body": "Room.${1:method}(${2:args})",
+    "description": "Acessa métodos relacionados ao quarto.",
+  },
+  "Room Get Furni By Tile": {
+    "prefix": "Room.getFurniByTile",
+    "body": "Room.getFurniByTile(${1:x}, ${2:y})",
+    "description": "Obtém os furnis em uma posição específica do quarto.",
+  },
+  "Player Send Message": {
+    "prefix": "Player.sendMessage",
+    "body": "Player.sendMessage(${1:userId}, ${2:message})",
+    "description": "Envia uma mensagem privada para um jogador.",
+  },
+  "Commands Register": {
+    "prefix": "Commands.register",
+    "body": "Commands.register('${1:command}', ${2:needStartText}, (${3:user}, ${4:text}) => {\n\t${5:// Código do comando}\n})",
+    "description": "Registra um comando com callback.",
+  },
+  "Events On": {
+    "prefix": "Events.on",
+    "body": "Events.on('${1:eventName}', (${2:args}) => {\n\t${3:// Código do evento}\n})",
+    "description": "Registra um evento com callback.",
+  },
+  "Events Send Message To Room": {
+    "prefix": "Events.sendMessageToRoom",
+    "body": "Events.sendMessageToRoom(${1:roomId}, '${2:eventName}', '${3:data}')",
+    "description": "Envia uma mensagem para um quarto específico.",
+  },
+}
