@@ -158,6 +158,12 @@ declare class ScriptFurni implements IScriptReachable {
    */
   hide(): void
 
+  /**
+ * Altera a cor do mobi.
+ * 
+ * @param {number} colorA - Cor A do mobi (0 a 255).
+ * @param {number} colorB - Cor B do mobi (0 a 255).
+ */
   paint(colorA: number, colorB: number): void
 
   /**
