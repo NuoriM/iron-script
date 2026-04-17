@@ -158,6 +158,8 @@ declare class ScriptFurni implements IScriptReachable {
    */
   hide(): void
 
+  paint(colorA: number, colorB: number): void
+
   /**
    * Ativa a interação do furni.
    */

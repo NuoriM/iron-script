@@ -1,18 +1,18 @@
 /**
+ * Callback de execução de comandos.
+ * @category Tipos
+ * @param user - Usuário que executou o comando.
+ * @param message - Mensagem enviada pelo usuário.
+ */
+type CommandCallback = (user: any, message: string) => void;
+
+/**
  * Constante responsável por gerenciar os comandos.
  * @category Classes
  * @author Arthur L
  * @author Gabriel T
  */
 declare namespace Commands {
-  /**
-   * Callback de execução de comandos.
-   * @category Tipos
-   * @param user - Usuário que executou o comando.
-   * @param message - Mensagem enviada pelo usuário.
-   */
-  type CommandCallback = (user: any, message: string) => void;
-
   /**
    * Registra um comando.
    * @example

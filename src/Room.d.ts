@@ -1,14 +1,13 @@
 import type { ScriptEntity, ScriptFurni, ScriptTile, ScriptGroup, ScriptPrivateChat, ScriptFurnisOpacity } from './types/index';
 
-
 declare global {
   /**
- * Propriedades e Métodos do quarto em que script está sendo executado
- * @category Classes
- * @author Arthur L
- * @author Gabriel T
- */
-  namespace Room {
+  * Propriedades e Métodos do quarto em que script está sendo executado
+  * @category Classes
+  * @author Arthur L
+  * @author Gabriel T
+  */
+  declare namespace Room {
     /**
      * Retorna o ID do quarto
      * @returns {number}
@@ -367,6 +366,6 @@ declare global {
      */
     function youtube(link: string): void
   }
-}
 
+}
 export { };

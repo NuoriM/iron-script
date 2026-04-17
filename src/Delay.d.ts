@@ -2,12 +2,12 @@ import { DelayTask } from './types/index';
 
 declare global {
   /**
- * Aguarda tempos determinados para executar funções. 
- * Cada tick corresponde 500ms.
- * @category Classes
- * @author Arthur L
- * @author Gabriel T
- */
+  * Aguarda tempos determinados para executar funções. 
+  * Cada tick corresponde 500ms.
+  * @category Classes
+  * @author Arthur L
+  * @author Gabriel T
+  */
   namespace Delay {
     /**
      * @example
@@ -55,5 +55,4 @@ declare global {
     */
     function seconds(sec: number): number
   }
-
 }
